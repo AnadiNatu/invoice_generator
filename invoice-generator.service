@@ -1,0 +1,33 @@
+[Unit]
+Description=Invoice Generator Spring Boot Application
+After=syslog.target network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+
+# Path to your JAR file
+ExecStart=/usr/bin/java -jar /opt/invoice-generator/invoice-generator.jar
+
+# Working directory
+WorkingDirectory=/opt/invoice-generator
+
+# Restart policy
+Restart=always
+RestartSec=10
+
+# Environment variables
+Environment="JAVA_OPTS=-Xms256m -Xmx512m"
+Environment="SERVER_PORT=8080"
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=invoice-generator
+
+# Security settings
+SuccessExitStatus=143
+TimeoutStopSec=10
+
+[Install]
+WantedBy=multi-user.target
