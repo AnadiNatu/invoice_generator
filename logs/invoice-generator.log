@@ -1,0 +1,280 @@
+2025-11-08T18:22:43.897+05:30  INFO 2104 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Starting InvoiceGeneratorApplication using Java 21.0.2 with PID 2104 (C:\Users\Lenovo\OneDrive\Desktop\invoice-generator\target\classes started by Lenovo in C:\Users\Lenovo\OneDrive\Desktop\invoice-generator)
+2025-11-08T18:22:43.901+05:30  INFO 2104 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T18:22:44.990+05:30  INFO 2104 --- [invoice-generator] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-08T18:22:45.033+05:30  INFO 2104 --- [invoice-generator] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+2025-11-08T18:22:45.857+05:30  INFO 2104 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T18:22:45.880+05:30  INFO 2104 --- [invoice-generator] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T18:22:45.880+05:30  INFO 2104 --- [invoice-generator] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T18:22:45.980+05:30  INFO 2104 --- [invoice-generator] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T18:22:45.981+05:30  INFO 2104 --- [invoice-generator] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2017 ms
+2025-11-08T18:22:46.135+05:30  WARN 2104 --- [invoice-generator] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2025-11-08T18:22:46.138+05:30  INFO 2104 --- [invoice-generator] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-08T18:22:46.171+05:30  INFO 2104 --- [invoice-generator] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-08T18:22:46.212+05:30 ERROR 2104 --- [invoice-generator] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2025-11-08T18:29:19.364+05:30  INFO 8804 --- [invoice-generator] [main] InvoiceGeneratorApplication              : Starting InvoiceGeneratorApplication using Java 21.0.2 with PID 8804 (C:\Users\Lenovo\OneDrive\Desktop\invoice-generator\target\classes started by Lenovo in C:\Users\Lenovo\OneDrive\Desktop\invoice-generator)
+2025-11-08T18:29:19.369+05:30  INFO 8804 --- [invoice-generator] [main] InvoiceGeneratorApplication              : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T18:29:19.481+05:30  WARN 8804 --- [invoice-generator] [main] ionWarningsApplicationContextInitializer : 
+
+** WARNING ** : Your ApplicationContext is unlikely to start due to a @ComponentScan of the default package.
+
+
+2025-11-08T18:29:20.711+05:30  WARN 8804 --- [invoice-generator] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: URL [jar:file:/C:/Users/Lenovo/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.7/spring-boot-autoconfigure-3.5.7.jar!/org/springframework/boot/autoconfigure/r2dbc/ConnectionFactoryConfigurations$PoolConfiguration.class]
+2025-11-08T18:29:20.719+05:30  INFO 8804 --- [invoice-generator] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-08T18:29:20.747+05:30 ERROR 8804 --- [invoice-generator] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: URL [jar:file:/C:/Users/Lenovo/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.7/spring-boot-autoconfigure-3.5.7.jar!/org/springframework/boot/autoconfigure/r2dbc/ConnectionFactoryConfigurations$PoolConfiguration.class]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:509) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:350) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:277) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:346) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:281) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:204) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:172) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar:3.5.7]
+	at InvoiceGeneratorApplication.main(InvoiceGeneratorApplication.java:13) ~[classes/:na]
+Caused by: java.lang.IllegalStateException: Could not evaluate condition on org.springframework.boot.autoconfigure.r2dbc.ConnectionFactoryConfigurations$PoolConfiguration due to io/r2dbc/spi/ValidationDepth not found. Make sure your own configuration does not rely on that class. This can also happen if you are @ComponentScanning a springframework package (e.g. if you put a @ComponentScan in the default package by mistake)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:54) ~[spring-boot-autoconfigure-3.5.7.jar:3.5.7]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:99) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:88) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:71) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isConditionMatch(ClassPathScanningCandidateComponentProvider.java:563) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.isCandidateComponent(ClassPathScanningCandidateComponentProvider.java:546) ~[spring-context-6.2.12.jar:6.2.12]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:470) ~[spring-context-6.2.12.jar:6.2.12]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: io/r2dbc/spi/ValidationDepth
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3473) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2780) ~[na:na]
+	at org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors.isInnerClass(DefaultBindConstructorProvider.java:144) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors.getCandidateConstructors(DefaultBindConstructorProvider.java:134) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider$Constructors.getConstructors(DefaultBindConstructorProvider.java:103) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.DefaultBindConstructorProvider.getBindConstructor(DefaultBindConstructorProvider.java:42) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.ValueObjectBinder$ValueObject.get(ValueObjectBinder.java:230) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.ValueObjectBinder$ValueObject.get(ValueObjectBinder.java:220) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.ValueObjectBinder.bind(ValueObjectBinder.java:77) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$6(Binder.java:488) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder.fromDataObjectBinders(Binder.java:493) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindDataObject$7(Binder.java:487) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:608) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withDataObject(Binder.java:594) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder.bindDataObject(Binder.java:487) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:426) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:357) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:345) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:275) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:236) ~[spring-boot-3.5.7.jar:3.5.7]
+	at org.springframework.boot.autoconfigure.r2dbc.ConnectionFactoryConfigurations$PooledConnectionFactoryCondition.getMatchOutcome(ConnectionFactoryConfigurations.java:155) ~[spring-boot-autoconfigure-3.5.7.jar:3.5.7]
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47) ~[spring-boot-autoconfigure-3.5.7.jar:3.5.7]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: io.r2dbc.spi.ValidationDepth
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 49 common frames omitted
+
+2025-11-08T18:29:30.646+05:30  INFO 31224 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Starting InvoiceGeneratorApplication using Java 21.0.2 with PID 31224 (C:\Users\Lenovo\OneDrive\Desktop\invoice-generator\target\classes started by Lenovo in C:\Users\Lenovo\OneDrive\Desktop\invoice-generator)
+2025-11-08T18:29:30.650+05:30  INFO 31224 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T18:29:32.421+05:30  INFO 31224 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T18:29:32.445+05:30  INFO 31224 --- [invoice-generator] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T18:29:32.446+05:30  INFO 31224 --- [invoice-generator] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T18:29:32.550+05:30  INFO 31224 --- [invoice-generator] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T18:29:32.552+05:30  INFO 31224 --- [invoice-generator] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1799 ms
+2025-11-08T18:29:32.794+05:30  INFO 31224 --- [invoice-generator] [main] c.e.i.services.InvoiceService            : Mock data initialized - Dealers: 2, Vehicles: 4
+2025-11-08T18:29:33.379+05:30  WARN 31224 --- [invoice-generator] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 680ace34-6696-455b-9a3d-ef6692c54939
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-08T18:29:33.402+05:30  INFO 31224 --- [invoice-generator] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-08T18:29:33.711+05:30  INFO 31224 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T18:29:33.725+05:30  INFO 31224 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Started InvoiceGeneratorApplication in 4.043 seconds (process running for 4.732)
+2025-11-08T18:32:32.646+05:30  INFO 31224 --- [invoice-generator] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-08T18:32:32.647+05:30  INFO 31224 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-08T18:32:32.648+05:30  INFO 31224 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-08T18:33:10.825+05:30  INFO 31224 --- [invoice-generator] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-08T18:33:10.836+05:30  INFO 31224 --- [invoice-generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-08T18:33:29.622+05:30  INFO 6432 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Starting InvoiceGeneratorApplication using Java 21.0.2 with PID 6432 (C:\Users\Lenovo\OneDrive\Desktop\invoice-generator\target\classes started by Lenovo in C:\Users\Lenovo\OneDrive\Desktop\invoice-generator)
+2025-11-08T18:33:29.625+05:30  INFO 6432 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T18:33:31.041+05:30  INFO 6432 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T18:33:31.061+05:30  INFO 6432 --- [invoice-generator] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T18:33:31.061+05:30  INFO 6432 --- [invoice-generator] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T18:33:31.142+05:30  INFO 6432 --- [invoice-generator] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T18:33:31.142+05:30  INFO 6432 --- [invoice-generator] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1451 ms
+2025-11-08T18:33:31.330+05:30  INFO 6432 --- [invoice-generator] [main] c.e.i.services.InvoiceService            : Mock data initialized - Dealers: 2, Vehicles: 4
+2025-11-08T18:33:31.848+05:30  WARN 6432 --- [invoice-generator] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a4127e33-faf4-4401-8e3a-6bf9bd921fab
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-08T18:33:31.860+05:30  INFO 6432 --- [invoice-generator] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-08T18:33:32.046+05:30  INFO 6432 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T18:33:32.058+05:30  INFO 6432 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Started InvoiceGeneratorApplication in 3.238 seconds (process running for 3.783)
+2025-11-08T18:33:41.476+05:30  INFO 6432 --- [invoice-generator] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-08T18:33:41.478+05:30  INFO 6432 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-08T18:33:41.481+05:30  INFO 6432 --- [invoice-generator] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-11-08T18:33:53.668+05:30  INFO 6432 --- [invoice-generator] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-08T18:33:53.681+05:30  INFO 6432 --- [invoice-generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-08T18:33:56.611+05:30  INFO 19196 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Starting InvoiceGeneratorApplication using Java 21.0.2 with PID 19196 (C:\Users\Lenovo\OneDrive\Desktop\invoice-generator\target\classes started by Lenovo in C:\Users\Lenovo\OneDrive\Desktop\invoice-generator)
+2025-11-08T18:33:56.624+05:30  INFO 19196 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T18:33:58.442+05:30  INFO 19196 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T18:33:58.477+05:30  INFO 19196 --- [invoice-generator] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T18:33:58.477+05:30  INFO 19196 --- [invoice-generator] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T18:33:58.649+05:30  INFO 19196 --- [invoice-generator] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T18:33:58.650+05:30  INFO 19196 --- [invoice-generator] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1926 ms
+2025-11-08T18:33:58.982+05:30  INFO 19196 --- [invoice-generator] [main] c.e.i.services.InvoiceService            : Mock data initialized - Dealers: 2, Vehicles: 4
+2025-11-08T18:33:59.671+05:30  WARN 19196 --- [invoice-generator] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 64466761-5683-40ee-a615-c7723d1f096d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-08T18:33:59.692+05:30  INFO 19196 --- [invoice-generator] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-08T18:34:00.024+05:30  INFO 19196 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T18:34:00.039+05:30  INFO 19196 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Started InvoiceGeneratorApplication in 4.424 seconds (process running for 5.238)
+2025-11-08T18:34:46.546+05:30  INFO 19196 --- [invoice-generator] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-08T18:34:46.559+05:30  INFO 19196 --- [invoice-generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-08T18:34:49.537+05:30  INFO 26316 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Starting InvoiceGeneratorApplication using Java 21.0.2 with PID 26316 (C:\Users\Lenovo\OneDrive\Desktop\invoice-generator\target\classes started by Lenovo in C:\Users\Lenovo\OneDrive\Desktop\invoice-generator)
+2025-11-08T18:34:49.542+05:30  INFO 26316 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T18:34:51.730+05:30  INFO 26316 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T18:34:51.758+05:30  INFO 26316 --- [invoice-generator] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T18:34:51.758+05:30  INFO 26316 --- [invoice-generator] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T18:34:51.886+05:30  INFO 26316 --- [invoice-generator] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T18:34:51.886+05:30  INFO 26316 --- [invoice-generator] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2232 ms
+2025-11-08T18:34:52.173+05:30  INFO 26316 --- [invoice-generator] [main] c.e.i.services.InvoiceService            : Mock data initialized - Dealers: 2, Vehicles: 4
+2025-11-08T18:34:52.946+05:30  WARN 26316 --- [invoice-generator] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0277451e-d851-4adb-9881-e728c2a6ecac
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-08T18:34:52.962+05:30  INFO 26316 --- [invoice-generator] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-08T18:34:53.310+05:30  INFO 26316 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T18:34:53.327+05:30  INFO 26316 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Started InvoiceGeneratorApplication in 4.841 seconds (process running for 5.63)
+2025-11-08T18:35:16.445+05:30  INFO 26316 --- [invoice-generator] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-08T18:35:16.453+05:30  INFO 26316 --- [invoice-generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-08T18:35:25.536+05:30  INFO 5804 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Starting InvoiceGeneratorApplication using Java 21.0.2 with PID 5804 (C:\Users\Lenovo\OneDrive\Desktop\invoice-generator\target\classes started by Lenovo in C:\Users\Lenovo\OneDrive\Desktop\invoice-generator)
+2025-11-08T18:35:25.540+05:30  INFO 5804 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T18:35:26.899+05:30  INFO 5804 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T18:35:26.917+05:30  INFO 5804 --- [invoice-generator] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T18:35:26.918+05:30  INFO 5804 --- [invoice-generator] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T18:35:26.996+05:30  INFO 5804 --- [invoice-generator] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T18:35:26.997+05:30  INFO 5804 --- [invoice-generator] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1358 ms
+2025-11-08T18:35:27.207+05:30  INFO 5804 --- [invoice-generator] [main] c.e.i.services.InvoiceService            : Mock data initialized - Dealers: 2, Vehicles: 4
+2025-11-08T18:35:27.634+05:30  INFO 5804 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T18:35:27.644+05:30  INFO 5804 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Started InvoiceGeneratorApplication in 3.023 seconds (process running for 3.714)
+2025-11-08T18:35:32.667+05:30  INFO 5804 --- [invoice-generator] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-08T18:35:32.669+05:30  INFO 5804 --- [invoice-generator] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-08T18:35:32.674+05:30  INFO 5804 --- [invoice-generator] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-11-08T18:35:32.944+05:30  INFO 5804 --- [invoice-generator] [http-nio-8080-exec-1] c.e.i.controller.InvoiceController       : Received invoice generation request - DealerID: null, VehicleID: null, Customer: null
+2025-11-08T18:35:32.944+05:30  INFO 5804 --- [invoice-generator] [http-nio-8080-exec-1] c.e.i.services.InvoiceService            : Generating invoice for dealer: null, vehicle: null, customer: null
+2025-11-08T18:35:32.945+05:30 ERROR 5804 --- [invoice-generator] [http-nio-8080-exec-1] c.e.i.controller.InvoiceController       : Error generating invoice
+
+java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null
+	at java.base/java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:936) ~[na:na]
+	at com.example.invoice_generator.services.InvoiceService.getDealerById(InvoiceService.java:66) ~[classes/:na]
+	at com.example.invoice_generator.services.InvoiceService.generateInvoice(InvoiceService.java:36) ~[classes/:na]
+	at com.example.invoice_generator.controller.InvoiceController.generateInvoice(InvoiceController.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.12.jar:6.2.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.48.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.12.jar:6.2.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.48.jar:10.1.48]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-11-08T18:39:59.338+05:30  INFO 5804 --- [invoice-generator] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-08T18:39:59.349+05:30  INFO 5804 --- [invoice-generator] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-08T23:43:17.984+05:30  INFO 32128 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Starting InvoiceGeneratorApplication using Java 21.0.2 with PID 32128 (C:\Users\Lenovo\OneDrive\Desktop\invoice-generator\target\classes started by Lenovo in C:\Users\Lenovo\OneDrive\Desktop\invoice-generator)
+2025-11-08T23:43:17.987+05:30  INFO 32128 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-11-08T23:43:19.852+05:30  INFO 32128 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-08T23:43:19.890+05:30  INFO 32128 --- [invoice-generator] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-08T23:43:19.890+05:30  INFO 32128 --- [invoice-generator] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-08T23:43:20.016+05:30  INFO 32128 --- [invoice-generator] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-08T23:43:20.017+05:30  INFO 32128 --- [invoice-generator] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1906 ms
+2025-11-08T23:43:20.288+05:30  INFO 32128 --- [invoice-generator] [main] c.e.i.services.InvoiceService            : Mock data initialized - Dealers: 2, Vehicles: 4
+2025-11-08T23:43:20.928+05:30  INFO 32128 --- [invoice-generator] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-08T23:43:20.942+05:30  INFO 32128 --- [invoice-generator] [main] c.e.i.InvoiceGeneratorApplication        : Started InvoiceGeneratorApplication in 4.135 seconds (process running for 4.966)
+2025-11-08T23:43:47.288+05:30  INFO 32128 --- [invoice-generator] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-08T23:43:47.289+05:30  INFO 32128 --- [invoice-generator] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-08T23:43:47.291+05:30  INFO 32128 --- [invoice-generator] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-11-08T23:43:47.544+05:30  INFO 32128 --- [invoice-generator] [http-nio-8080-exec-3] c.e.i.controller.InvoiceController       : Received invoice generation request - DealerID: D001, VehicleID: V001, Customer: Rajesh Kumar
+2025-11-08T23:43:47.546+05:30  INFO 32128 --- [invoice-generator] [http-nio-8080-exec-3] c.e.i.services.InvoiceService            : Generating invoice for dealer: D001, vehicle: V001, customer: Rajesh Kumar
+2025-11-08T23:43:48.352+05:30  INFO 32128 --- [invoice-generator] [http-nio-8080-exec-3] c.e.i.services.PDFGenerator              : PDF generated successfully for invoice: INV-20251108-798495
+2025-11-08T23:43:48.371+05:30  INFO 32128 --- [invoice-generator] [http-nio-8080-exec-3] c.e.i.controller.InvoiceController       : Invoice generated successfully - Size: 3748 bytes
