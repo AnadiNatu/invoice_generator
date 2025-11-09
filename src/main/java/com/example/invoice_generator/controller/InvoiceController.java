@@ -18,6 +18,7 @@ import java.time.format.DateTimeFormatter;
 
 @RestController
 @RequestMapping("/api/invoice")
+@CrossOrigin("*")
 @RequiredArgsConstructor
 @Slf4j
 public class InvoiceController {
